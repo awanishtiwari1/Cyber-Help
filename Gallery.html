@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color:Orange;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h1 style = "color:Red;background-color:gray">Hackers  Gallery</h1>
+  
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="images/img1.jpeg" alt="Nature" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img2.jpeg" alt="Snow" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img3.jpeg" alt="Mountains" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img4.jpeg" alt="Lights" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img5.jpeg" alt="Lights" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img6.jpeg" alt="Lights" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img7.jpeg" alt="Lights" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img8.jpeg" alt="Lights" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img9.jpeg" alt="Lights" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img10.jpeg" alt="Lights" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img11.jpeg" alt="Lights" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img12.jpeg" alt="Lights" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img13.jpeg" alt="Lights" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img14.jpeg" alt="Lights" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img15.jpeg" alt="Lights" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="images/img16.jpeg" alt="Lights" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="images/img17.jpeg" alt="Lights" style="width:100%" >
+  </div>
+   <div class="column">
+    <img src="images/img18.jpeg" alt="Lights" style="width:100%" >
+  </div>
+   <div class="column">
+    <img src="images/img19.jpeg" alt="Lights" style="width:100%" >
+  </div>
+   <div class="column">
+    <img src="images/img20.jpeg" alt="Lights" style="width:100%" >
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+
+
+</body>
+</html>
